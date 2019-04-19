@@ -11,7 +11,7 @@ object paralleizeTest {
       .getOrCreate()
 
     val lines = spark.sparkContext
-    .parallelize(List("hello world", "bonjour le monde"))
+    .parallelize(List("hello world", "bonjour tout le monde"))
 
     val words = lines.flatMap(line => line.split(" "))
 
